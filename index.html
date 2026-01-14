@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adish VC | Portfolio</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LET'S TALK BUTTON -->
+    <button class="talk-btn" onclick="openModal()">Let’s Talk</button>
+
+    <!-- CONTACT MODAL -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Let’s Connect</h3>
+            <p>Leave your email and I’ll be in touch.</p>
+
+            <input type="email" placeholder="Your email address" required>
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Adish VC">
+        </div>
+
+        <h1>Adish VC</h1>
+        <h2>ASPIRING CYBER SECURITY PROFESSIONAL</h2>
+
+        <div class="divider"></div>
+
+        <div class="contact">
+            <p><i class="fa-solid fa-envelope"></i> adishvc7@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 9746866498</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/adish-v-c-695b053a5/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/adishvc7" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://x.com/adish_vc" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section">
+        <h3>About Me</h3>
+        <p class="about-text">
+            BCA undergraduate specializing in Cyber Security & Software Development.
+            Learning secure coding practices, ethical hacking fundamentals, and building
+            practical projects. Interested in defensive security and secure application
+            development through hands-on experience.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt">
+        <h3>Skills</h3>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h4>Cyber Security (Beginner / Intern Level)</h4>
+                <ul>
+                    <li>Ethical Hacking Fundamentals</li>
+                    <li>Basic Networking & TCP/IP</li>
+                    <li>Web Application Security Basics</li>
+                    <li>OWASP Top 10 Awareness</li>
+                    <li>Burp Suite & Nmap (Basics)</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h4>Programming & Development</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML & CSS</li>
+                    <li>Basic JavaScript</li>
+                    <li>Secure Coding Fundamentals</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section">
+        <h3>Projects</h3>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>Bluetooth-Based Home Automation</h4>
+                <p>
+                    Developed a system to control electrical appliances using a mobile
+                    phone and HC-05 Bluetooth module, focusing on reliable communication
+                    and basic access control concepts.
+                </p>
+                <span>Arduino, HC-05, Embedded C</span>
+            </div>
+
+            <div class="project-card">
+                <h4>Secure Login Page</h4>
+                <p>
+                    Built a secure login interface with input validation and authentication
+                    flow, emphasizing awareness of common web security vulnerabilities.
+                </p>
+                <span>HTML, CSS, JavaScript</span>
+            </div>
+
+            <div class="project-card">
+                <h4>Honeypot (Learning Project)</h4>
+                <p>
+                    Implemented a basic honeypot environment to study attacker behavior,
+                    logging, and intrusion detection fundamentals.
+                </p>
+                <span>Linux, Networking Basics</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section alt">
+        <h3>Education</h3>
+
+        <div class="education-card">
+            <h4>Bachelor of Computer Applications (BCA)</h4>
+            <p>Cyber Security Specialization</p>
+            <p>Yenepoya Institution</p>
+            <span>Currently Pursuing</span>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Adish VC</p>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        function openModal() {
+            document.getElementById("contactModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("contactModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
