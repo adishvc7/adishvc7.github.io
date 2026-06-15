@@ -18,13 +18,40 @@
     <!-- CONTACT MODAL -->
     <div class="modal" id="contactModal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3>Let’s Connect</h3>
-            <p>Leave your email and I’ll be in touch.</p>
 
-            <input type="email" placeholder="Your email address" required>
-            <button class="send-btn">Send</button>
-        </div>
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <form action="https://formsubmit.co/adishvc7@gmail.com" method="POST">
+
+        <h3>Let's Connect</h3>
+
+        <p>
+            Interested in discussing job opportunities, projects, or collaborations?
+            Feel free to leave your contact details and message below, and I'll get back
+            to you as soon as possible.
+        </p>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            required>
+
+        <textarea
+            name="message"
+            class="message-box"
+            placeholder="Write your message here..."
+            required></textarea>
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit" class="send-btn">
+            Send Message
+        </button>
+
+    </form>
+
+</div>
     </div>
 
     <!-- HERO -->
@@ -61,10 +88,13 @@
     <section class="section">
         <h3>About Me</h3>
         <p class="about-text">
-            BCA undergraduate specializing in Cyber Security & Software Development.
-            Learning secure coding practices, ethical hacking fundamentals, and building
-            practical projects. Interested in defensive security and secure application
-            development through hands-on experience.
+            Recent BCA graduate specializing in Cyber Security with a strong interest in
+            protecting digital systems and learning modern security practices. Skilled in
+            secure coding fundamentals, basic network security, and ethical hacking concepts
+            through hands-on projects and internship experience. Passionate about building
+            practical cybersecurity solutions, exploring defensive security techniques, and
+            continuously improving technical skills through self-learning and real-world
+            project development.
         </p>
     </section>
 
@@ -77,21 +107,23 @@
                 <h4>Cyber Security (Beginner / Intern Level)</h4>
                 <ul>
                     <li>Ethical Hacking Fundamentals</li>
-                    <li>Basic Networking & TCP/IP</li>
-                    <li>Web Application Security Basics</li>
+                    <li>Network Fundamentals & TCP/IP</li>
+                    <li>Web Application Security</li>
                     <li>OWASP Top 10 Awareness</li>
-                    <li>Burp Suite & Nmap (Basics)</li>
+                    <li>Burp Suite & Nmap</li>
+                    <li>Security Monitoring & Log Analysis</li>
                 </ul>
             </div>
 
             <div class="skill-card">
                 <h4>Programming & Development</h4>
                 <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>HTML & CSS</li>
-                    <li>Basic JavaScript</li>
-                    <li>Secure Coding Fundamentals</li>
+                   <li>Python</li>
+                   <li>Java</li>
+                   <li>HTML & CSS</li>
+                   <li>JavaScript</li>
+                   <li>Git & GitHub</li>
+                   <li>Secure Coding Fundamentals</li>
                 </ul>
             </div>
         </div>
@@ -103,31 +135,43 @@
 
         <div class="projects-grid">
             <div class="project-card">
-                <h4>Bluetooth-Based Home Automation</h4>
+                <h4>Python-Based Network Scanner</h4>
+                <p>
+                    Developed a Python-based network scanner to discover active hosts and gather
+                    network information, enhancing practical knowledge of network protocols,
+                    host enumeration, and cybersecurity fundamentals.
+                </p>
+                <span>Python ,Networking ,Cyber Security</span>
+            </div>
+
+            <div class="project-card">
+                <h4>Basic Honeypot System</h4>
+                <p>
+                    Developed a Python-based honeypot to simulate vulnerable services and
+                    capture interaction attempts, enhancing practical knowledge of threat
+                    monitoring, attack detection, and cybersecurity fundamentals.
+                </p>
+                <span>Python, Security Monitoring, Log Analysis</span>
+            </div>
+
+            <div class="project-card">
+                <h4>Secure Login System</h4>
+                <p>
+                    Developed a secure login system with user authentication and access
+                    control features, focusing on credential validation and basic web
+                    security principles.
+                </p>
+                <span>HTML, CSS, JavaScript, Authentication</span>
+            </div>
+
+            <div class="project-card">
+                <h4>Home Automation System</h4>
                 <p>
                     Developed a system to control electrical appliances using a mobile
                     phone and HC-05 Bluetooth module, focusing on reliable communication
                     and basic access control concepts.
                 </p>
-                <span>Arduino, HC-05, Embedded C</span>
-            </div>
-
-            <div class="project-card">
-                <h4>Secure Login Page</h4>
-                <p>
-                    Built a secure login interface with input validation and authentication
-                    flow, emphasizing awareness of common web security vulnerabilities.
-                </p>
-                <span>HTML, CSS, JavaScript</span>
-            </div>
-
-            <div class="project-card">
-                <h4>Honeypot (Learning Project)</h4>
-                <p>
-                    Implemented a basic honeypot environment to study attacker behavior,
-                    logging, and intrusion detection fundamentals.
-                </p>
-                <span>Linux, Networking Basics</span>
+                <span>Arduino, HC-05, Embedded Systems</span>
             </div>
         </div>
     </section>
@@ -140,7 +184,7 @@
             <h4>Bachelor of Computer Applications (BCA)</h4>
             <p>Cyber Security Specialization</p>
             <p>Yenepoya Institution</p>
-            <span>Currently Pursuing</span>
+            <span>Recent Graduate</span>
         </div>
     </section>
 
